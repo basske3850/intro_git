@@ -16,3 +16,5 @@ git rm
 4つ
 git status
 git push
+
+あれれ
