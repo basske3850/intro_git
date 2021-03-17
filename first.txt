@@ -8,3 +8,7 @@ gitの練習をしています
 
 変更した理由
 なんのために変更したか
+
+git add
+git commit 
+git rm
