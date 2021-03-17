@@ -40,3 +40,51 @@ git diff
 
 git diff HEAD
 ステージとコミットの差分
+
+ローカルリポジトリ
+ローカルのgit 
+
+リモートリポジトリ
+github のことを指す
+
+リモートリポジトリに登録
+git remote add origin https://github.com/user/repo.git
+https://github.com/basske3850/intro_git
+
+リモートリポジトリへ送信
+git pushコマンドで、ローカルリポジトリの内容をリモートリポジトリへ送信する
+
+git push origin master
+
+違うブランチ feature ブランチに送信する場合は
+git push origin feature にする
+
+管理しないファイルをgitの管理から外す
+.gitignore ファイルに指定することで、ファイルをGitの管理から外すことができる
+自動生成されるファイルやパスワードが記載されているファイル
+
+書き方
+#から始まる行はコメント
+index.html
+指定したファイルを除外
+
+ルートディレクトリを指定
+/root.html
+
+ルートディレクトリ以下
+dir/
+
+コミットしてしまったファイルを管理から外す方法
+git rm コマンドで、コミットしてしまったファイルをGIｔの管理から削除できる。
+
+git rm [ファイル名]
+git rm -r[ディレクトリ名]
+
+ファイルを残す場合
+ファイルは残すけどgit管理から外す
+git rm --cached [ファイル名]
+
+
+git rm second.txt で除外したファイルをもとの戻す場合は、
+
+git reset HEAD second.txt で戻せる
