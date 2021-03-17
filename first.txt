@@ -18,3 +18,25 @@ git status
 git push
 
 あれれ
+
+git log
+git log --oneline 
+#１行で表示
+
+git log -p index.html
+#ファイルの差分を表示
+
+control + l
+#クリア
+
+git log -p first.txt
+#ログを表示
+jとkで履歴を表示できる
+終了する場合はq 
+
+
+git diff
+ステージとの差分を表示
+
+git diff HEAD
+ステージとコミットの差分
